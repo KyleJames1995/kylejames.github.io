@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <meta name="viewport" 
+        content="width=device-width, user-scalable=no">
+
+        <link href ="./style.css"
+              type ="text/css"
+              rel  ="stylesheet">
+        <title>
+            Kyle James' Portfolio
+        </title>
+        <header>
+                <nav class="topnav" id="portfolioTopnav">
+                        <a href = "about">About</a>
+                        <a href = "skills">Skills</a>
+                        <a href = "accomplishments">Accomplishments</a>
+                        <a href = "contact">Contact</a>
+                        <a href="javascript:void(0);" class="icon"
+                        onclick="openMenu()"><i class="fa fa-bars"></i></a>
+                </nav>
+               <h1 id = "title">    Kyle James  </h1>
+            </header>    
+        <body> 
+        <main>   
+            <div id = "aboutsection"></div>
+                <a href = "https://www.linkedin.com/in/kyle-james-663247209/" target = "_blank">
+                <figure>
+                    <img src = "my.image.JPG" width = "182" height = "232" alt = "A self portrait of Kyle James"/>
+                    <figcaption id="img-caption">A self portrait of Kyle James</figcaption>
+                </figure>    
+                </a>
+            <!-- About Section -->    
+            <h2 id = "about" class ="heading uppercase">    About   </h2>
+                <p id="about-me"> I am a statistician/bioinformatician who has 
+                    recently completed his PhD in <strong>Biogeographic 
+                    Ancestry Analysis</strong>. I love puzzle solving, 
+                    and <em>strive to expand</em> my knowledge-base reguarly!</p>
+                    <br>
+                    <br>
+                <!-- Skills Section -->    
+                <h3 id = "skills">    Skills  </h3>
+                    <!-- Research Skills Subsection -->
+                    <h4 id = "research_skills">    Research Skills     </h4>
+                        <ul class="list">
+                            <li> Data Collection                    </li>
+                            <li> Data Analysis                      </li>
+                            <li> Statistical Modelling              </li>
+                            <li> Report Writing and Proof-reading   </li>
+                        </ul>
+                    <!-- Interpersonal Skills Subsection -->    
+                    <h4 id = "interpersonal_skills">    Interpersonal Skills    </h4>
+                        <ul class="list">
+                            <li> Critical Reviewer </li>
+                            <li> Teamwork          </li>
+                            <li> Problem Solver    </li>
+                            <li> Leadership        </li>
+                        </ul>
+                    <!-- Technical Skills Subsection -->    
+                    <h4 id = "technical_skills">    Technical Skills    </h4>
+                        <ul class="list">
+                            <li> Programming/Statistical Languages </li>
+                            <li> Software Proficiency </li>
+                        </ul>
+            <div id = "accomplishmentsection"></div>
+            <!-- Accomplishments Section -->    
+            <h2 id = "accomplishments">Accomplishments</h2>
+            <h3>Coding Examples</h3>
+            <a href = "file:///G:/Intro%20to%20Coding%20Content/Portfolio/quiz.html" target = "_blank">Click Me!</a> 
+            <table>
+                <tr>
+                    <th scope = "col"> Publications </th>
+                    <th scope = "col"> Awards </th>
+                    <th scope = "col"> Presentations </th>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>Content</td>
+                    <td>Content</td>
+                </tr>
+            </table>
+            <div id = "contactsection"></div>
+            <!-- Contact Me Section -->    
+            <h2 id = "contact" class ="contactform">    Contact </h2>
+            <a href = "https://www.linkedin.com/in/kyle-james-663247209/" target = "_blank"> 
+            LinkedIn
+            </a>
+            <form>
+                <label for = "name"> *Name: </label>
+                    <br>
+                <input type = "text" 
+                       name = "name-text-field"
+                       id = "name"
+                       required>
+                    <br>
+                    <br>
+                <label for = "email"> *Email: </label>
+                    <br>
+                    <input type = "text"
+                           name = "email"
+                           id = "email"
+                           required
+                           pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <br>
+                    <br>
+                <label for = "mobile"> Mobile (optional) </label>
+                    <br>
+                    <input type = "number"
+                           name = "mobile"
+                           id = "mobile"
+                           pattern = "[0-9]">
+                    <br>
+                    <br>            
+                <label for = "message"> *Leave Your Message Below </label>
+                    <br>   
+                <textarea name = "message" 
+                          rows = "5" 
+                          cols = "30"
+                          required></textarea>
+                   <br>
+                   <br>
+                   <input type = "submit">       
+            </form>
+          </main>
+          <script src="./nav.js"></script>  
+        </body>
+    </head>
+</html>
